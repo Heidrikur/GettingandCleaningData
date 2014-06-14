@@ -3,7 +3,7 @@
 
 This is a description of what happens when the script “run_analysis.R” is run.
 
-* Firstly the script checks if there is a directory in the working directory called data. If directory isn’t present, then the code creates it.
+* Firstly the script checks if there is a directory in the working directory called data. If the data directory isn’t present, the code will create it.
 * In the second step, the code downloads a zip file containing the data from:     		 				https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 And unzips the files.
 * In the third step the code merges the training and the test datasets together using the rbind() function and storing the data “A”.
