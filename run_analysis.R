@@ -24,18 +24,12 @@ names(A) <- features[featuresSTDMEAN, 2]
 names(A) <- tolower(names(A))
 #Tidy up the headers
 names(A) <- gsub("\\(|\\)", "", names(A))
-names(A) <- gsub("-mean", " mean", names(A))
-names(A) <- gsub("-std", " std", names(A))
-names(A) <- gsub("-x", " x", names(A))
-names(A) <- gsub("-y", " y", names(A))
-names(A) <- gsub("-z", " z", names(A))
+names(A) <- gsub("-mean", "mean", names(A))
+names(A) <- gsub("-std", "std", names(A))
+names(A) <- gsub("-x", "x", names(A))
+names(A) <- gsub("-y", "y", names(A))
+names(A) <- gsub("-z", "z", names(A))
 names(A) <- gsub("bodybody", "body", names(A))
-names(A) <- gsub("body", " body ", names(A))
-names(A) <- gsub("gravity", " gravity ", names(A))
-names(A) <- gsub("jerk", " jerk ", names(A))
-names(A) <- gsub("acc", "acc ", names(A))
-names(A) <- gsub("gyro", "gyro ", names(A))
-names(A) <- gsub("  ", " ", names(A))
 
 # 3. Uses descriptive activity names to name the activities in the data set
 
